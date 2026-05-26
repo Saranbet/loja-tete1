@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f1f5f9; color: #0f172a; }
+button, input, select { font: inherit; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+.card { @apply bg-white rounded-2xl shadow-soft border border-slate-100; }
+.btn-primary { @apply bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition px-4 py-3; }
+.btn-soft { @apply bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-semibold transition px-4 py-3; }
+.input { @apply w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500; }
+.badge { @apply px-3 py-1 rounded-full text-xs font-bold; }
